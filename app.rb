@@ -13,8 +13,8 @@ get '/square/:number' do
 end
 
 get '/say/:number/:phrase' do
-  @number = params[:number].to_i
-  @phrase = @number.times do params[:phrase] end
+  @number = params[:number]
+  @phrase = @number.to_i.times do params[:phrase] end
   "#{@phrase}"
 end
 
