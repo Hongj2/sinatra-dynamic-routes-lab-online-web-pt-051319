@@ -7,3 +7,6 @@ end
 
 get '/square/:number'
 end
+
+get '/say/:number/:phrase'
+end
